@@ -15,3 +15,13 @@ class Cuenta(object):
             print("Lo siento, no tienes ese dinero en la cuenta.")
         else:
             self.saldo=self.saldo-cantidad2
+
+cuenta1=Cuenta(0.0)
+cuenta1.ingresar(125.23)
+print(getattr(cuenta1,"saldo"))
+cuenta1.ingresar(503.4)
+print(getattr(cuenta1,"saldo"))
+cuenta1.ingresar(50)
+print(getattr(cuenta1,"saldo"))
+cuenta1.retirar(333.34)
+print(getattr(cuenta1,"saldo"))
